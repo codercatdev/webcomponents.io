@@ -11,7 +11,7 @@ export class WcComponents {
     return (
       <ion-page class='show-page'>
         <wc-top-toolbar></wc-top-toolbar>
-        <ion-content fullscreen>
+        <ion-content>
           <main>
           <wc-site-menu></wc-site-menu>
           </main>
