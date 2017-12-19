@@ -10,7 +10,7 @@ export class SiteMenu {
       <div>
         <ul id="menu-list">
           <li>
-            <h4>Ionic Core</h4>
+            <h4><stencil-route-link url="/components/ionic-core">Ionic Core</stencil-route-link></h4>
             <ul>
             <li><stencil-route-link url="/components/action-sheet-controller">action-sheet-controller</stencil-route-link></li>
             <li><stencil-route-link url="/components/action-sheet">action-sheet</stencil-route-link></li>
