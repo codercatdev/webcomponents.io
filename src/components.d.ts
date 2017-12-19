@@ -10,6 +10,96 @@ import '@ionic/core';
 
 
 import {
+  WcApp as WcApp
+} from './components/wc-app/wc-app';
+
+declare global {
+  interface HTMLWcAppElement extends WcApp, HTMLElement {
+  }
+  var HTMLWcAppElement: {
+    prototype: HTMLWcAppElement;
+    new (): HTMLWcAppElement;
+  };
+  interface HTMLElementTagNameMap {
+    "wc-app": HTMLWcAppElement;
+  }
+  interface ElementTagNameMap {
+    "wc-app": HTMLWcAppElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "wc-app": JSXElements.WcAppAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface WcAppAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
+  WcComponents as WcComponents
+} from './components/wc-components/wc-components';
+
+declare global {
+  interface HTMLWcComponentsElement extends WcComponents, HTMLElement {
+  }
+  var HTMLWcComponentsElement: {
+    prototype: HTMLWcComponentsElement;
+    new (): HTMLWcComponentsElement;
+  };
+  interface HTMLElementTagNameMap {
+    "wc-components": HTMLWcComponentsElement;
+  }
+  interface ElementTagNameMap {
+    "wc-components": HTMLWcComponentsElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "wc-components": JSXElements.WcComponentsAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface WcComponentsAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
+  WcHome as WcHome
+} from './components/wc-home/wc-home';
+
+declare global {
+  interface HTMLWcHomeElement extends WcHome, HTMLElement {
+  }
+  var HTMLWcHomeElement: {
+    prototype: HTMLWcHomeElement;
+    new (): HTMLWcHomeElement;
+  };
+  interface HTMLElementTagNameMap {
+    "wc-home": HTMLWcHomeElement;
+  }
+  interface ElementTagNameMap {
+    "wc-home": HTMLWcHomeElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "wc-home": JSXElements.WcHomeAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface WcHomeAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
   SiteMenu as WcSiteMenu
 } from './components/wc-site-menu/wc-site-menu';
 
@@ -33,6 +123,36 @@ declare global {
   }
   namespace JSXElements {
     export interface WcSiteMenuAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
+  WcTopToolbar as WcTopToolbar
+} from './components/wc-top-toolbar/wc-top-toolbar';
+
+declare global {
+  interface HTMLWcTopToolbarElement extends WcTopToolbar, HTMLElement {
+  }
+  var HTMLWcTopToolbarElement: {
+    prototype: HTMLWcTopToolbarElement;
+    new (): HTMLWcTopToolbarElement;
+  };
+  interface HTMLElementTagNameMap {
+    "wc-top-toolbar": HTMLWcTopToolbarElement;
+  }
+  interface ElementTagNameMap {
+    "wc-top-toolbar": HTMLWcTopToolbarElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "wc-top-toolbar": JSXElements.WcTopToolbarAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface WcTopToolbarAttributes extends HTMLAttributes {
       
     }
   }
