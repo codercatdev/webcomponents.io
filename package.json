@@ -1,8 +1,8 @@
 {
-  "name": "@stencil/starter",
+  "name": "@ajonp/webcomponents",
   "private": true,
   "version": "0.0.1",
-  "description": "Stencil App Starter",
+  "description": "Webcomponents.io",
   "files": [
     "dist/"
   ],
@@ -15,25 +15,26 @@
     "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
-    "@stencil/core": "next",
+    "@ionic/core": "0.0.2-28",
+    "@stencil/core": "latest",
     "@stencil/router": "latest"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
-    "@types/jest": "^21.1.1",
-    "jest": "^21.2.1"
+    "@types/jest": "latest",
+    "jest": "latest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-app-starter.git"
+    "url": "git+https://github.com/ajonp/webcomponents.io"
   },
-  "author": "Ionic Team",
+  "author": "Alex",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/ajonp/webcomponents.io"
   },
-  "homepage": "https://github.com/ionic-team/stencil",
+  "homepage": "https://github.com/ajonp/webcomponents.io",
   "jest": {
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"

@@ -1,16 +1,16 @@
 import { render } from '@stencil/core/testing';
-import { AppHome } from './app-home';
+import { WcComponents } from './wc-components';
 
 describe('app', () => {
   it('should build', () => {
-    expect(new AppHome()).toBeTruthy();
+    expect(new WcComponents()).toBeTruthy();
   });
 
   describe('rendering', () => {
     beforeEach(async () => {
       await render({
-        components: [AppHome],
-        html: '<app-home></app-home>'
+        components: [WcComponents],
+        html: '<wc-components></wc-components>'
       });
     });
   });

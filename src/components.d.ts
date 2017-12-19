@@ -6,95 +6,33 @@
 
 import '@stencil/router';
 
-import {
-  MatchResults,
-} from '@stencil/router';
+import '@ionic/core';
+
 
 import {
-  AppHome as AppHome
-} from './components/app-home/app-home';
+  SiteMenu as WcSiteMenu
+} from './components/wc-site-menu/wc-site-menu';
 
 declare global {
-  interface HTMLAppHomeElement extends AppHome, HTMLElement {
+  interface HTMLWcSiteMenuElement extends WcSiteMenu, HTMLElement {
   }
-  var HTMLAppHomeElement: {
-    prototype: HTMLAppHomeElement;
-    new (): HTMLAppHomeElement;
+  var HTMLWcSiteMenuElement: {
+    prototype: HTMLWcSiteMenuElement;
+    new (): HTMLWcSiteMenuElement;
   };
   interface HTMLElementTagNameMap {
-    "app-home": HTMLAppHomeElement;
+    "wc-site-menu": HTMLWcSiteMenuElement;
   }
   interface ElementTagNameMap {
-    "app-home": HTMLAppHomeElement;
+    "wc-site-menu": HTMLWcSiteMenuElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "app-home": JSXElements.AppHomeAttributes;
+      "wc-site-menu": JSXElements.WcSiteMenuAttributes;
     }
   }
   namespace JSXElements {
-    export interface AppHomeAttributes extends HTMLAttributes {
-      
-    }
-  }
-}
-
-
-import {
-  AppProfile as AppProfile
-} from './components/app-profile/app-profile';
-
-declare global {
-  interface HTMLAppProfileElement extends AppProfile, HTMLElement {
-  }
-  var HTMLAppProfileElement: {
-    prototype: HTMLAppProfileElement;
-    new (): HTMLAppProfileElement;
-  };
-  interface HTMLElementTagNameMap {
-    "app-profile": HTMLAppProfileElement;
-  }
-  interface ElementTagNameMap {
-    "app-profile": HTMLAppProfileElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      "app-profile": JSXElements.AppProfileAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface AppProfileAttributes extends HTMLAttributes {
-      
-        match?: MatchResults
-    }
-  }
-}
-
-
-import {
-  MyApp as MyApp
-} from './components/my-app/my-app';
-
-declare global {
-  interface HTMLMyAppElement extends MyApp, HTMLElement {
-  }
-  var HTMLMyAppElement: {
-    prototype: HTMLMyAppElement;
-    new (): HTMLMyAppElement;
-  };
-  interface HTMLElementTagNameMap {
-    "my-app": HTMLMyAppElement;
-  }
-  interface ElementTagNameMap {
-    "my-app": HTMLMyAppElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      "my-app": JSXElements.MyAppAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface MyAppAttributes extends HTMLAttributes {
+    export interface WcSiteMenuAttributes extends HTMLAttributes {
       
     }
   }
