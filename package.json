@@ -7,16 +7,17 @@
     "dist/"
   ],
   "scripts": {
-    "build": "stencil build --prerender",
+    "build": "stencil build",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+    "devWithSW": "sd concurrent \"stencil build --dev --service-worker --watch\" \"stencil-dev-server\" ",
     "serve": "stencil-dev-server",
     "start": "npm run dev",
     "test": "jest --no-cache",
     "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
-    "@ionic/core": "0.0.2-28",
-    "@stencil/core": "latest",
+    "@ionic/core": "0.0.2-48",
+    "@stencil/core": "0.4.0",
     "@stencil/router": "latest"
   },
   "devDependencies": {

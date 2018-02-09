@@ -8,13 +8,55 @@ import '@stencil/router';
 
 import '@ionic/core';
 
+import {
+  MatchResults,
+} from '@stencil/router';
+
+declare global {
+  interface HTMLStencilElement extends HTMLElement {
+    componentOnReady(): Promise<this>;
+    componentOnReady(done: (ele?: this) => void): void;
+  }
+}
+
+
+
+import {
+  WcApp as WcApp
+} from './components/wc-app/wc-app';
+
+declare global {
+  interface HTMLWcAppElement extends WcApp, HTMLStencilElement {
+  }
+  var HTMLWcAppElement: {
+    prototype: HTMLWcAppElement;
+    new (): HTMLWcAppElement;
+  };
+  interface HTMLElementTagNameMap {
+    "wc-app": HTMLWcAppElement;
+  }
+  interface ElementTagNameMap {
+    "wc-app": HTMLWcAppElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "wc-app": JSXElements.WcAppAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface WcAppAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
 
 import {
   WcComponents as WcComponents
 } from './components/wc-components/wc-components';
 
 declare global {
-  interface HTMLWcComponentsElement extends WcComponents, HTMLElement {
+  interface HTMLWcComponentsElement extends WcComponents, HTMLStencilElement {
   }
   var HTMLWcComponentsElement: {
     prototype: HTMLWcComponentsElement;
@@ -33,8 +75,99 @@ declare global {
   }
   namespace JSXElements {
     export interface WcComponentsAttributes extends HTMLAttributes {
+      match?: MatchResults;
+    }
+  }
+}
+
+
+import {
+  WcHome as WcHome
+} from './components/wc-home/wc-home';
+
+declare global {
+  interface HTMLWcHomeElement extends WcHome, HTMLStencilElement {
+  }
+  var HTMLWcHomeElement: {
+    prototype: HTMLWcHomeElement;
+    new (): HTMLWcHomeElement;
+  };
+  interface HTMLElementTagNameMap {
+    "wc-home": HTMLWcHomeElement;
+  }
+  interface ElementTagNameMap {
+    "wc-home": HTMLWcHomeElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "wc-home": JSXElements.WcHomeAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface WcHomeAttributes extends HTMLAttributes {
       
     }
   }
 }
 
+
+import {
+  SiteMenu as WcSiteMenu
+} from './components/wc-site-menu/wc-site-menu';
+
+declare global {
+  interface HTMLWcSiteMenuElement extends WcSiteMenu, HTMLStencilElement {
+  }
+  var HTMLWcSiteMenuElement: {
+    prototype: HTMLWcSiteMenuElement;
+    new (): HTMLWcSiteMenuElement;
+  };
+  interface HTMLElementTagNameMap {
+    "wc-site-menu": HTMLWcSiteMenuElement;
+  }
+  interface ElementTagNameMap {
+    "wc-site-menu": HTMLWcSiteMenuElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "wc-site-menu": JSXElements.WcSiteMenuAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface WcSiteMenuAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
+  WcTopToolbar as WcTopToolbar
+} from './components/wc-top-toolbar/wc-top-toolbar';
+
+declare global {
+  interface HTMLWcTopToolbarElement extends WcTopToolbar, HTMLStencilElement {
+  }
+  var HTMLWcTopToolbarElement: {
+    prototype: HTMLWcTopToolbarElement;
+    new (): HTMLWcTopToolbarElement;
+  };
+  interface HTMLElementTagNameMap {
+    "wc-top-toolbar": HTMLWcTopToolbarElement;
+  }
+  interface ElementTagNameMap {
+    "wc-top-toolbar": HTMLWcTopToolbarElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "wc-top-toolbar": JSXElements.WcTopToolbarAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface WcTopToolbarAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+declare global { namespace JSX { interface StencilJSX {} } }
