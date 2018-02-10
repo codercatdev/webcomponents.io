@@ -6,7 +6,7 @@ exports.config = {
   serviceWorker: {
     swSrc: 'src/sw.js'
   },
-  globalStyle: 'src/global/app.css'
+  globalStyle: 'src/global/variables.css'
 };
 
 exports.devServer = {

@@ -8,9 +8,6 @@ import '@stencil/router';
 
 import '@ionic/core';
 
-import {
-  MatchResults,
-} from '@stencil/router';
 
 declare global {
   interface HTMLStencilElement extends HTMLElement {
@@ -19,6 +16,36 @@ declare global {
   }
 }
 
+
+
+import {
+  AppMarked as AppMarked
+} from './components/app-marked/app-marked';
+
+declare global {
+  interface HTMLAppMarkedElement extends AppMarked, HTMLStencilElement {
+  }
+  var HTMLAppMarkedElement: {
+    prototype: HTMLAppMarkedElement;
+    new (): HTMLAppMarkedElement;
+  };
+  interface HTMLElementTagNameMap {
+    "app-marked": HTMLAppMarkedElement;
+  }
+  interface ElementTagNameMap {
+    "app-marked": HTMLAppMarkedElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "app-marked": JSXElements.AppMarkedAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface AppMarkedAttributes extends HTMLAttributes {
+      doc?: string;
+    }
+  }
+}
 
 
 import {
@@ -75,7 +102,7 @@ declare global {
   }
   namespace JSXElements {
     export interface WcComponentsAttributes extends HTMLAttributes {
-      match?: MatchResults;
+      pages?: string[];
     }
   }
 }
