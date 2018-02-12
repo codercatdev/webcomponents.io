@@ -12,13 +12,15 @@ export class AppMarked {
   @State() content: string;
 
   componentWillLoad() {
-    return this.fetchNewContent();
+      return this.fetchNewContent();
   }
 
   @Watch('doc')
   fetchNewContent() {
     return fetch(`/assets/docs/${this.doc}`)
-      .then(response => response.text())
+      .then(response => {
+        return response.text()
+      })
       .then(data => {
         this.content = data;
 
@@ -27,7 +29,7 @@ export class AppMarked {
 
         const headerEl = el.querySelector('h1');
         document.title = (headerEl && headerEl.textContent + ' - Stencil') || 'Stencil';
-        
+
         // requestAnimationFrame is not available for preRendering
         // or SSR, so only run this in the browser
         if (!this.isServer) {

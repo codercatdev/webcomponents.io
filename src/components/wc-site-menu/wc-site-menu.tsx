@@ -7,104 +7,103 @@ import { Component } from '@stencil/core';
 export class SiteMenu {
   render() {
     return (
-      <ion-scroll>
         <div>
           <ul id="menu-list">
             <li>
               <h4><stencil-route-link url="/components/ionic-core">Ionic Core</stencil-route-link></h4>
               <ul>
-                <li><stencil-route-link url="/components/action-sheet-controller">action-sheet-controller</stencil-route-link></li>
-                <li><stencil-route-link url="/components/action-sheet">action-sheet</stencil-route-link></li>
-                <li><stencil-route-link url="/components/alert-controller">alert-controller</stencil-route-link></li>
-                <li><stencil-route-link url="/components/alert">alert</stencil-route-link></li>
-                <li><stencil-route-link url="/components/animation-controller">animation-controller</stencil-route-link></li>
-                <li><stencil-route-link url="/components/app">app</stencil-route-link></li>
-                <li><stencil-route-link url="/components/avatar">avatar</stencil-route-link></li>
-                <li><stencil-route-link url="/components/backdrop">backdrop</stencil-route-link></li>
-                <li><stencil-route-link url="/components/badge">badge</stencil-route-link></li>
-                <li><stencil-route-link url="/components/button">button</stencil-route-link></li>
-                <li><stencil-route-link url="/components/buttons">buttons</stencil-route-link></li>
-                <li><stencil-route-link url="/components/card-content">card-content</stencil-route-link></li>
-                <li><stencil-route-link url="/components/card-header">card-header</stencil-route-link></li>
-                <li><stencil-route-link url="/components/card-subtitle">card-subtitle</stencil-route-link></li>
-                <li><stencil-route-link url="/components/card-title">card-title</stencil-route-link></li>
-                <li><stencil-route-link url="/components/card">card</stencil-route-link></li>
-                <li><stencil-route-link url="/components/checkbox">checkbox</stencil-route-link></li>
-                <li><stencil-route-link url="/components/chip-button">chip-button</stencil-route-link></li>
-                <li><stencil-route-link url="/components/chip">chip</stencil-route-link></li>
-                <li><stencil-route-link url="/components/col">col</stencil-route-link></li>
-                <li><stencil-route-link url="/components/content">content</stencil-route-link></li>
-                <li><stencil-route-link url="/components/datetime">datetime</stencil-route-link></li>
-                <li><stencil-route-link url="/components/fab-button">fab-button</stencil-route-link></li>
-                <li><stencil-route-link url="/components/fab-list">fab-list</stencil-route-link></li>
-                <li><stencil-route-link url="/components/fab">fab</stencil-route-link></li>
-                <li><stencil-route-link url="/components/footer">footer</stencil-route-link></li>
-                <li><stencil-route-link url="/components/gesture-controller">gesture-controller</stencil-route-link></li>
-                <li><stencil-route-link url="/components/gesture">gesture</stencil-route-link></li>
-                <li><stencil-route-link url="/components/grid">grid</stencil-route-link></li>
-                <li><stencil-route-link url="/components/header">header</stencil-route-link></li>
-                <li><stencil-route-link url="/components/icon">icon</stencil-route-link></li>
-                <li><stencil-route-link url="/components/infinite-scroll-content">infinite-scroll-content</stencil-route-link></li>
-                <li><stencil-route-link url="/components/infinite-scroll">infinite-scroll</stencil-route-link></li>
-                <li><stencil-route-link url="/components/input">input</stencil-route-link></li>
-                <li><stencil-route-link url="/components/item-divider">item-divider</stencil-route-link></li>
-                <li><stencil-route-link url="/components/item-option">item-option</stencil-route-link></li>
-                <li><stencil-route-link url="/components/item-options">item-options</stencil-route-link></li>
-                <li><stencil-route-link url="/components/item-sliding">item-sliding</stencil-route-link></li>
-                <li><stencil-route-link url="/components/item">item</stencil-route-link></li>
-                <li><stencil-route-link url="/components/keyboard-controller">keyboard-controller</stencil-route-link></li>
-                <li><stencil-route-link url="/components/label">label</stencil-route-link></li>
-                <li><stencil-route-link url="/components/list-header">list-header</stencil-route-link></li>
-                <li><stencil-route-link url="/components/list">list</stencil-route-link></li>
-                <li><stencil-route-link url="/components/loading-controller">loading-controller</stencil-route-link></li>
-                <li><stencil-route-link url="/components/loading">loading</stencil-route-link></li>
-                <li><stencil-route-link url="/components/menu-controller">menu-controller</stencil-route-link></li>
-                <li><stencil-route-link url="/components/menu">menu</stencil-route-link></li>
-                <li><stencil-route-link url="/components/modal-controller">modal-controller</stencil-route-link></li>
-                <li><stencil-route-link url="/components/modal">modal</stencil-route-link></li>
-                <li><stencil-route-link url="/components/nav">nav</stencil-route-link></li>
-                <li><stencil-route-link url="/components/navbar">navbar</stencil-route-link></li>
-                <li><stencil-route-link url="/components/note">note</stencil-route-link></li>
-                <li><stencil-route-link url="/components/page">page</stencil-route-link></li>
-                <li><stencil-route-link url="/components/picker-column">picker-column</stencil-route-link></li>
-                <li><stencil-route-link url="/components/picker-controller">picker-controller</stencil-route-link></li>
-                <li><stencil-route-link url="/components/picker">picker</stencil-route-link></li>
-                <li><stencil-route-link url="/components/popover-controller">popover-controller</stencil-route-link></li>
-                <li><stencil-route-link url="/components/popover">popover</stencil-route-link></li>
-                <li><stencil-route-link url="/components/radio-group">radio-group</stencil-route-link></li>
-                <li><stencil-route-link url="/components/radio">radio</stencil-route-link></li>
-                <li><stencil-route-link url="/components/range-knob">range-knob</stencil-route-link></li>
-                <li><stencil-route-link url="/components/range">range</stencil-route-link></li>
-                <li><stencil-route-link url="/components/reorder-group">reorder-group</stencil-route-link></li>
-                <li><stencil-route-link url="/components/reorder">reorder</stencil-route-link></li>
-                <li><stencil-route-link url="/components/route-link">route-link</stencil-route-link></li>
-                <li><stencil-route-link url="/components/route">route</stencil-route-link></li>
-                <li><stencil-route-link url="/components/router-controller">router-controller</stencil-route-link></li>
-                <li><stencil-route-link url="/components/row">row</stencil-route-link></li>
-                <li><stencil-route-link url="/components/scroll">scroll</stencil-route-link></li>
-                <li><stencil-route-link url="/components/searchbar">searchbar</stencil-route-link></li>
-                <li><stencil-route-link url="/components/segment-button">segment-button</stencil-route-link></li>
-                <li><stencil-route-link url="/components/segment">segment</stencil-route-link></li>
-                <li><stencil-route-link url="/components/select-option">select-option</stencil-route-link></li>
-                <li><stencil-route-link url="/components/select-popover">select-popover</stencil-route-link></li>
-                <li><stencil-route-link url="/components/select">select</stencil-route-link></li>
-                <li><stencil-route-link url="/components/skeleton-text">skeleton-text</stencil-route-link></li>
-                <li><stencil-route-link url="/components/slide">slide</stencil-route-link></li>
-                <li><stencil-route-link url="/components/slides">slides</stencil-route-link></li>
-                <li><stencil-route-link url="/components/spinner">spinner</stencil-route-link></li>
-                <li><stencil-route-link url="/components/split-pane">split-pane</stencil-route-link></li>
-                <li><stencil-route-link url="/components/tab-button">tab-button</stencil-route-link></li>
-                <li><stencil-route-link url="/components/tab">tab</stencil-route-link></li>
-                <li><stencil-route-link url="/components/tabbar">tabbar</stencil-route-link></li>
-                <li><stencil-route-link url="/components/tabs">tabs</stencil-route-link></li>
-                <li><stencil-route-link url="/components/textarea">textarea</stencil-route-link></li>
-                <li><stencil-route-link url="/components/thumbnail">thumbnail</stencil-route-link></li>
-                <li><stencil-route-link url="/components/title">title</stencil-route-link></li>
-                <li><stencil-route-link url="/components/toast-controller">toast-controller</stencil-route-link></li>
-                <li><stencil-route-link url="/components/toast">toast</stencil-route-link></li>
-                <li><stencil-route-link url="/components/toggle">toggle</stencil-route-link></li>
-                <li><stencil-route-link url="/components/toolbar">toolbar</stencil-route-link></li>
-                <li><stencil-route-link url="/components/util">util</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-action-sheet-controller">action-sheet-controller</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-action-sheet">action-sheet</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-alert-controller">alert-controller</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-alert">alert</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-animation-controller">animation-controller</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-app">app</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-avatar">avatar</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-backdrop">backdrop</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-badge">badge</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-button">button</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-buttons">buttons</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-card-content">card-content</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-card-header">card-header</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-card-subtitle">card-subtitle</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-card-title">card-title</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-card">card</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-checkbox">checkbox</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-chip-button">chip-button</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-chip">chip</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-col">col</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-content">content</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-datetime">datetime</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-fab-button">fab-button</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-fab-list">fab-list</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-fab">fab</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-footer">footer</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-gesture-controller">gesture-controller</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-gesture">gesture</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-grid">grid</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-header">header</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-icon">icon</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-infinite-scroll-content">infinite-scroll-content</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-infinite-scroll">infinite-scroll</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-input">input</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-item-divider">item-divider</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-item-option">item-option</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-item-options">item-options</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-item-sliding">item-sliding</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-item">item</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-keyboard-controller">keyboard-controller</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-label">label</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-list-header">list-header</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-list">list</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-loading-controller">loading-controller</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-loading">loading</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-menu-controller">menu-controller</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-menu">menu</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-modal-controller">modal-controller</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-modal">modal</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-nav">nav</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-navbar">navbar</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-note">note</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-page">page</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-picker-column">picker-column</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-picker-controller">picker-controller</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-picker">picker</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-popover-controller">popover-controller</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-popover">popover</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-radio-group">radio-group</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-radio">radio</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-range-knob">range-knob</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-range">range</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-reorder-group">reorder-group</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-reorder">reorder</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-route-link">route-link</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-route">route</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-router-controller">router-controller</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-row">row</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-scroll">scroll</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-searchbar">searchbar</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-segment-button">segment-button</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-segment">segment</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-select-option">select-option</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-select-popover">select-popover</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-select">select</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-skeleton-text">skeleton-text</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-slide">slide</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-slides">slides</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-spinner">spinner</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-split-pane">split-pane</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-tab-button">tab-button</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-tab">tab</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-tabbar">tabbar</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-tabs">tabs</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-textarea">textarea</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-thumbnail">thumbnail</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-title">title</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-toast-controller">toast-controller</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-toast">toast</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-toggle">toggle</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-toolbar">toolbar</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-util">util</stencil-route-link></li>
               </ul>
             </li>
 
@@ -113,7 +112,7 @@ export class SiteMenu {
               <ul>
 
                 <li>
-                  <stencil-route-link url="/components/my-first-component">
+                  <stencil-route-link url="/components/ion-my-first-component">
                     My First Component
                 </stencil-route-link>
                 </li>
@@ -122,7 +121,6 @@ export class SiteMenu {
             </li>
           </ul>
         </div>
-      </ion-scroll>
     );
   }
 }
