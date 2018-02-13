@@ -1,10 +1,10 @@
 import { Component, Prop, State, Watch } from '@stencil/core';
 
 @Component({
-  tag: 'app-marked',
-  styleUrl: 'app-marked.scss'
+  tag: 'wc-example-code',
+  styleUrl: 'wc-example-code.scss'
 })
-export class AppMarked {
+export class WcExampleCode {
 
   @Prop() doc: string;
   @Prop({ context: 'isServer' }) private isServer: boolean;

@@ -6,6 +6,7 @@ import { Component, Prop } from '@stencil/core';
 })
 export class WcComponents {
   @Prop() pages: string[] = [];
+  @Prop() examples: string[] = [];
   public myheight = {
     height: "100vh"
   }
@@ -24,7 +25,21 @@ export class WcComponents {
                 </div>
               </ion-col>
               <ion-col col-10>
-                {this.pages.map(page => <app-marked doc={page} />)}
+                <ion-row>
+                  <ion-col>
+                    {this.pages.map(page => <app-marked doc={page} />)}
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    <ion-card>
+                      <ion-card-header>Example</ion-card-header>
+                      <ion-card-content>
+                        {this.examples.map(example => <wc-example-code doc={example} />)}
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-col>
+                </ion-row>
               </ion-col>
             </ion-row>
           </ion-grid>

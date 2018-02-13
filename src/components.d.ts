@@ -102,7 +102,38 @@ declare global {
   }
   namespace JSXElements {
     export interface WcComponentsAttributes extends HTMLAttributes {
+      examples?: string[];
       pages?: string[];
+    }
+  }
+}
+
+
+import {
+  WcExampleCode as WcExampleCode
+} from './components/wc-example-code/wc-example-code';
+
+declare global {
+  interface HTMLWcExampleCodeElement extends WcExampleCode, HTMLStencilElement {
+  }
+  var HTMLWcExampleCodeElement: {
+    prototype: HTMLWcExampleCodeElement;
+    new (): HTMLWcExampleCodeElement;
+  };
+  interface HTMLElementTagNameMap {
+    "wc-example-code": HTMLWcExampleCodeElement;
+  }
+  interface ElementTagNameMap {
+    "wc-example-code": HTMLWcExampleCodeElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "wc-example-code": JSXElements.WcExampleCodeAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface WcExampleCodeAttributes extends HTMLAttributes {
+      doc?: string;
     }
   }
 }
