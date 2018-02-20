@@ -19,6 +19,7 @@ export class SiteMenu {
                 <li><stencil-route-link url="/components/ion-animation-controller">animation-controller</stencil-route-link></li>
                 <li><stencil-route-link url="/components/ion-app">app</stencil-route-link></li>
                 <li><stencil-route-link url="/components/ion-avatar">avatar</stencil-route-link></li>
+                <li><stencil-route-link url="/components/ion-back-button">back-button</stencil-route-link></li>
                 <li><stencil-route-link url="/components/ion-backdrop">backdrop</stencil-route-link></li>
                 <li><stencil-route-link url="/components/ion-badge">badge</stencil-route-link></li>
                 <li><stencil-route-link url="/components/ion-button">button</stencil-route-link></li>
