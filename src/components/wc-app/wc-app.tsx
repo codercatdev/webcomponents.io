@@ -116,7 +116,7 @@ export class WcApp {
                   const exampleMap = {
                     'ionic-core': '/assets/examples/ionic-core/ionic-core.html',
                     'ion-action-sheet': '/assets/examples/ionic-core/ion-action-sheet.html',
-                    'ion-action-sheet-controller': '/assets/examples/ionic-core/ion-action-sheet-controller.html',
+                    'ion-action-sheet-controller': 'https://stackblitz.com/edit/ajonp-ionic-action-sheet?embed=1&file=index.html&view=preview',
                     'ion-alert-controller': '/assets/examples/ionic-core/ion-alert-controller.html',
                     'ion-alert': '/assets/examples/ionic-core/ion-alert.html',
                     'ion-animation-controller': '/assets/examples/ionic-core/ion-animation-controller.html',

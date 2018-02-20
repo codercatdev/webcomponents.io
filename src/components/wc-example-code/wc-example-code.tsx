@@ -7,8 +7,6 @@ import { Component, Prop, State, Watch } from '@stencil/core';
 export class WcExampleCode {
 
   @Prop() doc: string;
-  @Prop({ context: 'isServer' }) private isServer: boolean;
-
   @State() content: string;
 
   componentWillLoad() {
@@ -17,33 +15,13 @@ export class WcExampleCode {
 
   @Watch('doc')
   fetchNewContent() {
-    return fetch(`${this.doc}`)
-      .then(response => {
-        return response.text()
-      })
-      .then(data => {
-        this.content = data;
-
-        const el = document.createElement('div');
-        el.innerHTML = data;
-
-        const headerEl = el.querySelector('h1');
-        document.title = (headerEl && headerEl.textContent + ' - Stencil') || 'Stencil';
-
-        // requestAnimationFrame is not available for preRendering
-        // or SSR, so only run this in the browser
-        if (!this.isServer) {
-          window.requestAnimationFrame(() => {
-            window.scrollTo(0, 0);
-          })
-        }
-
-      });
+    this.content = this.doc;
+    return this.content;
   }
 
   render() {
     return (
-      <div innerHTML={this.content}></div>
+      <iframe src={this.content} height="480px" width="100%" ></iframe>
     )
   }
 }
